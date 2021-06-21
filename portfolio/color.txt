@@ -1,0 +1,2 @@
+primary-color: #OF1624
+secondary-color: text-gray-300
