@@ -1,9 +1,43 @@
-const Experience = () => {
-    return (
-        <div>
-            Experience
-        </div>
-    )
-}
+import { Judul } from "../atoms";
 
-export default Experience
+const Experience = () => {
+  return (
+    <div className="min-h-screen mt-5">
+      <Judul text="Experience" />
+      <div className="container mx-auto mt-5 flex flex-wrap justify-center items-center">
+      <div className="sm:w-1/2 lg:w-1/3 text-white">
+        <div className="p-8 border-2 border-white">
+          <h2 className="text-2xl font-medium text-center">Lorem</h2>
+          <hr className="border-4 h-2 m-2  border-blue-500" />
+          <div>
+            <h3 className="font-mono text-xl font-normal">
+              Lorem ipsum | July 2020 - Present
+            </h3>
+            <p className="text-lg font-serif">
+              Skills: Lorem, Lorem, Lorem, Lorem
+            </p>
+          </div>
+          <div className="font-sans text-lg mt-2">
+            <ul className="list-disc list-outside">
+              <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              </li>
+              <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              </li>
+              <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Experience;

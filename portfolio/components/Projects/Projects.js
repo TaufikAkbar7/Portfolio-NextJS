@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="mt-5 min-h-screen">
       <Judul text="Projects"/>
-      <div className="flex flex-wrap wrap container mx-auto">
+      <div className="flex flex-wrap justify-center items-center container mx-auto">
         <div className="p-4 sm:w-1/2 lg:w-1/3">
           <div className="h-full border-2 border-white border-opacity-60 rounded-lg overflow-hidden">
             <Image
