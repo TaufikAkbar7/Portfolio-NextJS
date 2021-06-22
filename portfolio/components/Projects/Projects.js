@@ -1,11 +1,10 @@
 import Image from "next/image";
 import pic from "../../public/pic.jpg";
+import { Judul } from "../atoms"
 const Projects = () => {
   return (
-    <div className="mt-5 min-h-scree">
-      <div className="flex justify-center">
-        <h1 className="text-5xl font-bold text-gray-200 mt-5">Projects</h1>
-      </div>
+    <div className="mt-5 min-h-screen">
+      <Judul text="Projects"/>
       <div className="flex flex-wrap wrap container mx-auto">
         <div className="p-4 sm:w-1/2 lg:w-1/3">
           <div className="h-full border-2 border-white border-opacity-60 rounded-lg overflow-hidden">
