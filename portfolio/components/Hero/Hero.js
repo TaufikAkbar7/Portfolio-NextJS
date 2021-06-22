@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="mx-auto h-64 p-5">
-      <div className="">
-        <div className="">
+    <div className="min-h-screen flex items-center">
+      <div className="flex flex-col items-center justify-center">
+        <div>
           <h1 className="text-5xl font-bold text-gray-200">Welcome To <br/>My Personal Portfolio</h1>
           <h3 className="text-lg font-sans text-gray-300 mt-5 tracking-wide">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
