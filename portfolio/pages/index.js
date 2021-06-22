@@ -3,7 +3,6 @@ import {
   Hero,
   Projects,
   BackgroundAnimate,
-  About,
   Contact,
   Technologies,
   Experience
@@ -20,7 +19,6 @@ const Home = () => {
       <Experience/>
       <Projects/>
       <Technologies/>
-      <About/>
       <Contact/>
     </div>
   );

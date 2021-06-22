@@ -3,13 +3,12 @@ import { Judul } from "../atoms";
 const Experience = () => {
   return (
     <div className="min-h-screen mt-5">
-      <Judul text="Experience" />
+      <Judul text="Experience" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="container mx-auto mt-5 flex flex-wrap justify-center items-center">
       <div className="sm:w-1/2 lg:w-1/3 text-white">
         <div className="p-8 border-2 border-white">
-          <h2 className="text-2xl font-medium text-center">Lorem</h2>
-          <hr className="border-4 h-2 m-2  border-blue-500" />
-          <div>
+          <Judul text="Lorem" width="w-full" height="h-2" fontSize="text-2xl" fontWeight="font-medium"/>
+          <div className="mt-2">
             <h3 className="font-mono text-xl font-normal">
               Lorem ipsum | July 2020 - Present
             </h3>

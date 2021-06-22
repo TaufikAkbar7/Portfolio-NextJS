@@ -1,10 +1,10 @@
 import Image from "next/image";
-import pic from "../../public/pic.jpg";
+import pic from "../../public/assets/pic.jpg";
 import { Judul } from "../atoms"
 const Projects = () => {
   return (
     <div className="mt-5 min-h-screen">
-      <Judul text="Projects"/>
+      <Judul text="Projects" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="flex flex-wrap justify-center items-center container mx-auto">
         <div className="p-4 sm:w-1/2 lg:w-1/3">
           <div className="h-full border-2 border-white border-opacity-60 rounded-lg overflow-hidden">
@@ -16,10 +16,7 @@ const Projects = () => {
               className="w-full object-cover object-center"
             />
             <div className="p-6 flex flex-col items-center">
-              <h2 className="font-medium text-indigo-50 mb-1 text-center text-2xl">
-                Project
-              </h2>
-              <hr className="w-20 border-4 h-2 m-2 border-blue-500" />
+              <Judul text="Project" width="w-20" height="h-2" fontSize="text-2xl" fontWeight="font-medium"/>
               <div className="container mx-auto mt-4">
                 <p className="text-white">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
