@@ -1,21 +1,27 @@
 import {
   Header,
-  Footer,
   Hero,
   Projects,
   BackgroundAnimate,
+  About,
+  Contact,
+  Technologies,
+  Experience
 } from "../components";
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header/>
       <div className="grid grid-cols-2 gap-4 container mx-auto mt-5">
         <Hero />
         <BackgroundAnimate/>
       </div>
-      <Projects />
-      <Footer />
+      <Experience/>
+      <Projects/>
+      <Technologies/>
+      <About/>
+      <Contact/>
     </div>
   );
 };
