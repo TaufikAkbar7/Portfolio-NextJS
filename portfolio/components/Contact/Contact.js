@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <div className="mt-5 h-72">
+    <div className="mt-5 h-72" id="contact">
       <Judul
         text="Contact Me"
         width="w-40"

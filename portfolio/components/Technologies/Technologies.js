@@ -9,7 +9,7 @@ import bootstrap from "../../public/assets/bootstrap.png";
 
 const Technologies = () => {
   return (
-    <div className="mt-5 min-h-screen flex justify-center items-center flex-col">
+    <div className="mt-5 min-h-screen flex justify-center items-center flex-col" id="tech">
       <Judul
         text="Technologies"
         width="w-40"

@@ -3,7 +3,7 @@ import pic from "../../public/assets/pic.jpg";
 import { Judul } from "../atoms"
 const Projects = () => {
   return (
-    <div className="mt-5 min-h-screen">
+    <div className="mt-5 min-h-screen" id="projects">
       <Judul text="Projects" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="flex flex-wrap justify-center items-center container mx-auto">
         <div className="p-4 sm:w-1/2 lg:w-1/3">

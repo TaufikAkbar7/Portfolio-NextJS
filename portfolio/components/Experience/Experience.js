@@ -2,7 +2,7 @@ import { Judul } from "../atoms";
 
 const Experience = () => {
   return (
-    <div className="min-h-screen mt-5">
+    <div className="min-h-screen mt-5" id="experience">
       <Judul text="Experience" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="container mx-auto mt-5 flex flex-wrap justify-center items-center">
       <div className="sm:w-1/2 lg:w-1/3 text-white">
