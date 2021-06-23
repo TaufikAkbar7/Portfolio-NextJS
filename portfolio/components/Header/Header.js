@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { FiSlack } from "react-icons/fi";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   return (
@@ -22,18 +22,14 @@ const Header = () => {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
-          <a
-            href="#experience"
-            className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white mr-7"
-          >
-            Experience
-          </a>
-          <a
-            href="#projects"
-            className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white mr-7"
+         <ScrollLink to="projects" smooth={true} duration={2000}>
+          <span
+            // href="#projects"
+            className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white mr-7"
           >
             Projects
-          </a>
+          </span>
+          </ScrollLink>
           <a
             href="#tech"
             className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white mr-7"
