@@ -7,7 +7,7 @@ const Experience = () => {
       <Judul text={experience.title} width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="container mx-auto mt-5 flex flex-wrap justify-center items-center">
       {experience.experiences.map((item, i) => (
-        <div className="sm:w-1/2 lg:w-1/3 text-white mr-5" key={i}>
+        <div className="sm:w-1/2 lg:w-1/3 text-white mr-5 sm:mt-5" key={i}>
         <div className="p-8 border-2 border-white">
           <Judul text={item.company_name} width="w-full" height="h-2" fontSize="text-2xl" fontWeight="font-medium"/>
           <div className="mt-2">

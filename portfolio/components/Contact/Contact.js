@@ -9,7 +9,7 @@ const Contact = () => {
   const { github, linked_in, instagram, gmail } = contact.socials
 
   return (
-    <div className="mt-5 h-72" id="contact">
+    <div className="mt-5 h-60" id="contact">
       <Judul
         text={contact.title}
         width="w-40"
@@ -22,16 +22,16 @@ const Contact = () => {
           <h2 className="text-4xl font-medium">Socials</h2>
           <div className="justify-center flex mt-5">
             <Link href={github}>
-              <FaGithub className="text-5xl mr-3 text-white cursor-pointer hover:text-gray-400"/>
+              <FaGithub className="text-5xl sm:text-3xl md:text-5xl mr-3 text-white cursor-pointer hover:text-gray-400"/>
             </Link>
             <Link href={linked_in}>
-              <FaLinkedin className="text-5xl mr-3 text-white cursor-pointer hover:text-gray-400"/>
+              <FaLinkedin className="text-5xl sm:text-3xl md:text-5xl mr-3 text-white cursor-pointer hover:text-gray-400"/>
             </Link>
             <Link href={instagram}>
-              <FaInstagramSquare className="text-5xl mr-3 text-white cursor-pointer hover:text-gray-400"/>
+              <FaInstagramSquare className="text-5xl sm:text-3xl md:text-5xl mr-3 text-white cursor-pointer hover:text-gray-400"/>
             </Link>
             <Link href={gmail}>
-              <SiGmail className="text-5xl text-white cursor-pointer hover:text-gray-400"/>
+              <SiGmail className="text-5xl sm:text-3xl md:text-5xl text-white cursor-pointer hover:text-gray-400"/>
             </Link>
           </div>
         </div>
