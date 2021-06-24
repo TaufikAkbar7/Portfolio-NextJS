@@ -1,50 +1,56 @@
-import { FiSlack } from "react-icons/fi";
+import React, { useState, Fragment } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { header } from "../../content/data";
 
 const Header = () => {
+  const [showNav, setShowNav] = useState(true)
+
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6" id="header">
-      <div className="flex items-center flex-shrink-0 text-gray-300 mr-6">
-        <FiSlack/>
-        <a href="#header" className="font-semibold text-2xl tracking-tight">Portfolio</a>
-      </div>
-      <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded border-teal-400 text-gray-300 hover:text-white hover:border-white">
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+    <Fragment>
+      <nav className="fixed min-w-full flex flex-wrap items-center justify-between px-2 py-3 bg-blue-500 z-10 mb-3">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <ScrollLink to="hero" smooth={true} duration={2000}>
+              <span className="cursor-pointer text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase" style={{ color: "#OF1624" }}>
+                Portfolio
+              </span>
+            </ScrollLink>
+            <button
+              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setShowNav(!showNav)}
+            >
+              <svg
+                className="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div
+            className={
+              "lg:flex flex-grow items-center" +
+              (showNav ? " flex" : " hidden")
+            }
+            id="example-navbar-danger"
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
-         <ScrollLink to="projects" smooth={true} duration={2000}>
-          <span
-            // href="#projects"
-            className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white mr-7"
-          >
-            Projects
-          </span>
-          </ScrollLink>
-          <a
-            href="#tech"
-            className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white mr-7"
-          >
-            Technologies
-          </a>
-          <a
-            href="#contact"
-            className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-300 hover:text-white"
-          >
-            Contact
-          </a>
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              {header.map((item, i) => (
+                <li className="nav-item" key={i}>
+                  <ScrollLink to={item.link} smooth={true} duration={2000}>
+                    <span className="cursor-pointer px-3 py-2 flex items-center text-lg uppercase font-semibold leading-snug hover:text-white" style={{ color: "#OF1624" }}>
+                      {item.name}
+                    </span>
+                  </ScrollLink>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </Fragment>
   );
 };
 
