@@ -2,26 +2,27 @@ import {
   Header,
   Hero,
   Projects,
-  BackgroundAnimate,
   Contact,
   Technologies,
   Experience
 } from "../components";
+import Head from "next/head";
+import React, { Fragment } from "react";
 
 const Home = () => {
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      {/* <div className="grid grid-cols-2 gap-4 container mx-auto mt-5">
-        <Hero />
-        <BackgroundAnimate/>
-      </div> */}
-      <Experience/>
-      <Projects/>
-      <Technologies/>
-      <Contact/>
-    </div>
+    <Fragment>
+      <Head>
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio website using Next JS" />
+      </Head>
+      <Header />
+      <Hero />
+      <Experience />
+      <Projects />
+      <Technologies />
+      <Contact />
+    </Fragment>
   );
 };
 

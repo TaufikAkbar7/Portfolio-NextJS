@@ -3,7 +3,7 @@ import { Judul } from "../atoms";
 
 const Experience = () => {
   return (
-    <div className="h-5/6 mt-5" id="experience">
+    <div className="min-h-screen flex flex-col justify-center items-center" id="experience">
       <Judul text={experience.title} width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="container mx-auto mt-5 flex flex-wrap justify-center items-center">
       {experience.experiences.map((item, i) => (

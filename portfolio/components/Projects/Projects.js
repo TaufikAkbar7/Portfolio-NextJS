@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen mt-10" id="projects">
-      <Judul text={project.title} width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
+    <div className="min-h-screen mt-14 py-10 flex flex-col justify-center items-center" id="projects">
+      <Judul text={project.title} marginTop="mt-14" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="flex flex-wrap justify-center items-center container mx-auto mt-5">
         {project.projects.map((item, i) => (
           <div className="sm:w-1/2 lg:w-1/3 md:ml-4 md:mr-4 md:mt-5 sm:mt-5 sm:ml-1 sm:mr-3" key={i}>

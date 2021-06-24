@@ -9,7 +9,7 @@ const Contact = () => {
   const { github, linked_in, instagram, gmail } = contact.socials
 
   return (
-    <div className="mt-5 h-60" id="contact">
+    <div className="mt-5 h-96 flex flex-col justify-center items-center" id="contact">
       <Judul
         text={contact.title}
         width="w-40"
@@ -17,7 +17,7 @@ const Contact = () => {
         fontSize="text-5xl"
         fontWeight="font-bold"
       />
-      <div className="mt-5 flex flex-wrap justify-center items-center container mx-auto">
+      <div className="mt-12 flex flex-wrap justify-center items-center container mx-auto">
         <div className="p-4 sm:w-1/2 lg:w-1/3 text-white text-center mr-2">
           <h2 className="text-4xl font-medium">Socials</h2>
           <div className="justify-center flex mt-5">

@@ -4,13 +4,14 @@ import { tech } from "../../content/data";
 
 const Technologies = () => {
   return (
-    <div className="mt-10 min-h-screen flex justify-center items-center flex-col" id="tech">
+    <div className="mt-14 py-10 min-h-screen flex justify-center items-center flex-col" id="tech">
       <Judul
         text={tech.title}
         width="w-40"
         height="h-2"
         fontSize="text-5xl"
         fontWeight="font-bold"
+        marginTop="mt-14"
       />
       <div className="container mx-auto flex flex-wrap justify-center  mt-20">
         {tech.img_tech.map((img, i) => (

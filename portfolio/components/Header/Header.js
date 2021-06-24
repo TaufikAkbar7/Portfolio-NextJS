@@ -11,7 +11,7 @@ const Header = () => {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <ScrollLink to="hero" smooth={true} duration={2000}>
-              <span className="cursor-pointer text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase" style={{ color: "#OF1624" }}>
+              <span className="cursor-pointer text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white hover:text-black">
                 Portfolio
               </span>
             </ScrollLink>
@@ -40,7 +40,7 @@ const Header = () => {
               {header.map((item, i) => (
                 <li className="nav-item" key={i}>
                   <ScrollLink to={item.link} smooth={true} duration={2000}>
-                    <span className="cursor-pointer px-3 py-2 flex items-center text-lg uppercase font-semibold leading-snug hover:text-white" style={{ color: "#OF1624" }}>
+                    <span className="cursor-pointer px-3 py-2 flex items-center text-lg text-white uppercase font-semibold leading-snug hover:text-black">
                       {item.name}
                     </span>
                   </ScrollLink>
