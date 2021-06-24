@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
-        <title>Portfolio</title>
+        <title>Taufik Akbar</title>
         <meta name="description" content="Portfolio website using Next JS" />
       </Head>
       <Header />
