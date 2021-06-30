@@ -55,7 +55,7 @@ const contact = {
         github: "https://github.com/TaufikAkbar7",
         linked_in: "https://www.linkedin.com/in/taufik-akbar-5842771a2",
         instagram: "https://www.instagram.com/pikk_7/",
-        gmail: "mailto:akbar.taufik062@gmail.com"
+        gmail: "mailto:akbar.taufik062@gmail.com",
     },
     no_telp: "+62 812-1326-0537",
     address: "Jakarta Timur, DKI Jakarta / Indonesia"

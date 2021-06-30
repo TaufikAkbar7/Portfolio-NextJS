@@ -1,17 +1,12 @@
 import { hero, contact } from "../../content/data";
-import Link from "next/link"
 import { FaGithub, FaLinkedin, FaInstagramSquare, FaAngleDoubleDown } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
 import { Link as ScrollLink } from "react-scroll";
 
+
 const Hero = () => {
   const { github, linked_in, instagram, gmail } = contact.socials
-
-  const handleDownload = (e) => {
-    e.preventDefault();
-    window.location.href = "https://taufikakbar7.vercel.app/public/assets/TaufikAkbar-CV.pdf"
-  }
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center" id="hero">
@@ -22,36 +17,26 @@ const Hero = () => {
             {hero.desc}
           </h3>
           <div className="flex flex-wrap justify-center items-center mt-5">
-            <div className="flex flex-row justify-center items-center p-2 text-gray-200 cursor-pointer hover:text-gray-400">
-              <Link href={github}>
-                <FaGithub className="text-xl mr-3 md:text-3xl" />
-              </Link>
+            <a href={github} target="_blank" className="flex flex-row justify-center items-center p-2 text-gray-200 cursor-pointer hover:text-gray-400">
+              <FaGithub className="text-xl mr-3 md:text-3xl" />
               <p>Github</p>
-            </div>
-            <div className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
-              <Link href={linked_in}>
-                <FaLinkedin className="text-xl mr-3 md:text-3xl" />
-              </Link>
+            </a>
+            <a href={linked_in} target="_blank" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+              <FaLinkedin className="text-xl mr-3 md:text-3xl" />
               <p>LinkedIn</p>
-            </div>
-            <div className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
-              <Link href={instagram}>
-                <FaInstagramSquare className="text-xl mr-3 md:text-3xl" />
-              </Link>
+            </a>
+            <a href={instagram} target="_blank" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+              <FaInstagramSquare className="text-xl mr-3 md:text-3xl" />
               <p>Instagram</p>
-            </div>
-            <div className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
-              <Link href={gmail}>
-                <SiGmail className="text-xl mr-3 md:text-3xl" />
-              </Link>
+            </a>
+            <a href={gmail} target="_blank" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+              <SiGmail className="text-xl mr-3 md:text-3xl" />
               <p>Gmail</p>
-            </div>
-            <div className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
-              <Link href={github}>
-                <FiDownload className="text-xl mr-3 md:text-3xl" onClick={handleDownload}/>
-              </Link>
+            </a>
+            <a className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+              <FiDownload className="text-xl mr-3 md:text-3xl" />
               <p>Resume</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
