@@ -7,7 +7,6 @@ const project = {
     title: "Projects",
     projects: [
         {
-            img: pic,
             project_name: "Lorem",
             project_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
             stacks: [
@@ -28,7 +27,6 @@ const project = {
             ]
         },
         {
-            img: pic,
             project_name: "Lorem",
             project_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
             stacks: [
