@@ -16,19 +16,19 @@ const Hero = () => {
             {hero.desc}
           </h3>
           <div className="flex flex-wrap justify-center items-center mt-5">
-            <a href={github} target="_blank" className="flex flex-row justify-center items-center p-2 text-gray-200 cursor-pointer hover:text-gray-400">
+            <a href={github} target="_blank" rel="noreferrer" className="flex flex-row justify-center items-center p-2 text-gray-200 cursor-pointer hover:text-gray-400">
               <FaGithub className="text-xl mr-3 md:text-3xl" />
               <p>Github</p>
             </a>
-            <a href={linked_in} target="_blank" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+            <a href={linked_in} target="_blank" rel="noreferrer" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
               <FaLinkedin className="text-xl mr-3 md:text-3xl" />
               <p>LinkedIn</p>
             </a>
-            <a href={instagram} target="_blank" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+            <a href={instagram} target="_blank" rel="noreferrer" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
               <FaInstagramSquare className="text-xl mr-3 md:text-3xl" />
               <p>Instagram</p>
             </a>
-            <a href={gmail} target="_blank" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+            <a href={gmail} target="_blank" rel="noreferrer" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
               <SiGmail className="text-xl mr-3 md:text-3xl" />
               <p>Gmail</p>
             </a>
