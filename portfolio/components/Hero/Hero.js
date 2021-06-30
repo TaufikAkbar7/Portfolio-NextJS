@@ -4,7 +4,6 @@ import { FiDownload } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
 import { Link as ScrollLink } from "react-scroll";
 
-
 const Hero = () => {
   const { github, linked_in, instagram, gmail } = contact.socials
 
@@ -33,10 +32,10 @@ const Hero = () => {
               <SiGmail className="text-xl mr-3 md:text-3xl" />
               <p>Gmail</p>
             </a>
-            <a className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
+            {/* <a href="./TaufikAkbar-CV.pdf" download="TaufikAkbar.pdf" className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
               <FiDownload className="text-xl mr-3 md:text-3xl" />
               <p>Resume</p>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
