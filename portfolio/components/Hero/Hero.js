@@ -7,6 +7,12 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   const { github, linked_in, instagram, gmail } = contact.socials
+
+  const handleDownload = (e) => {
+    e.preventDefault();
+    window.location.href = "https://taufikakbar7.vercel.app/public/assets/TaufikAkbar-CV.pdf"
+  }
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center" id="hero">
       <div className="container mx-auto font-sans flex flex-col justify-center items-center p-5">
@@ -42,7 +48,7 @@ const Hero = () => {
             </div>
             <div className="flex flex-row justify-center items-center p-2  text-gray-200 cursor-pointer hover:text-gray-400">
               <Link href={github}>
-                <FiDownload className="text-xl mr-3 md:text-3xl" />
+                <FiDownload className="text-xl mr-3 md:text-3xl" onClick={handleDownload}/>
               </Link>
               <p>Resume</p>
             </div>
