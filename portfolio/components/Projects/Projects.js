@@ -1,9 +1,8 @@
 import { project } from "../../content/data";
 import { Judul } from "../atoms";
 import { FaRegFolder } from "react-icons/fa";
-import { BiLinkExternal } from "react-icons/bi";
-import { FaGithub } from "react-icons/fa";
-import Link from "next/link";
+
+// import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -17,8 +16,11 @@ const Projects = () => {
               <div className="flex flex-row justify-between items-start w-full">
                 <FaRegFolder className="text-4xl"/>
                 <div className="text-2xl flex flex-row">
-                <BiLinkExternal className="mr-3  cursor-pointer hover:text-gray-400"/>
-                <FaGithub className="cursor-pointer hover:text-gray-400"/>
+                  {item.links.map(loop => (
+                    <a key={loop.name} href={loop.link} target="_blank">
+                      {loop.tag}
+                    </a>
+                  ))}
                 </div>
               </div>
               <Judul text={item.project_name} fontSize="text-2xl" fontWeight="font-medium"/>
