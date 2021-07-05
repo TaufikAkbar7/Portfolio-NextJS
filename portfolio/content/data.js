@@ -25,12 +25,12 @@ const project = {
                 {
                     name: "Code",
                     link: "https://coding-nicely.vercel.app/",
-                    tag: <BiLinkExternal className="mr-2 cursor-pointer hover:text-gray-400"/>
+                    tag: <BiLinkExternal />
                 },
                 {
                     name: "Source",
                     link: "https://github.com/TaufikAkbar7/Coding-nicely",
-                    tag: <FaGithub className="cursor-pointer hover:text-gray-400"/>
+                    tag: <FaGithub />
                 }
             ]
         },
@@ -42,27 +42,27 @@ const contact = {
     socials: [
         {
             name: "Github",
-            tag: <FaGithub className="text-xl mr-3 md:text-3xl" />,
+            tag: <FaGithub />,
             link: "https://github.com/TaufikAkbar7",
         },
         {
             name: "LinkedIn",
-            tag: <FaLinkedin className="text-xl mr-3 md:text-3xl" />,
+            tag: <FaLinkedin />,
             link: "https://www.linkedin.com/in/taufik-akbar-5842771a2",
         },
         {
             name: "Instagram",
-            tag: <FiInstagram className="text-xl mr-3 md:text-3xl" />,
+            tag: <FiInstagram />,
             link: "https://www.instagram.com/pikk_7/",
         },
         {
             name: "Gmail",
-            tag: <SiGmail className="text-xl mr-3 md:text-3xl" />,
+            tag: <SiGmail />,
             link: "mailto:akbar.taufik062@gmail.com",
         },
         // {
         //     name: "Resume",
-        //     tag: <FiDownload className="text-xl mr-3 md:text-3xl" />,
+        //     tag: <FiDownload />,
         //     link: "./TaufikAkbar-CV.pdf",
         // },
     ],

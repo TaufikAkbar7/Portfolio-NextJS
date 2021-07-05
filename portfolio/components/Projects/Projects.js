@@ -17,8 +17,8 @@ const Projects = () => {
                 <FaRegFolder className="text-4xl"/>
                 <div className="text-2xl flex flex-row">
                   {item.links.map(loop => (
-                    <a key={loop.name} href={loop.link} target="_blank" rel="noreferrer">
-                      {loop.tag}
+                    <a className="px-2" key={loop.name} href={loop.link} target="_blank" rel="noreferrer">
+                      <span className="cursor-pointer hover:text-gray-400">{loop.tag}</span>
                     </a>
                   ))}
                 </div>

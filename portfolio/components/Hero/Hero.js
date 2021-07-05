@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center items-center mt-5">
             {socials.map(item => (
               <a key={item.name} href={item.link} target="_blank" rel="noreferrer" className="flex flex-row justify-center items-center p-2 text-gray-200 cursor-pointer hover:text-gray-400">
-                {item.tag}
+                <span className="text-xl mr-3 md:text-3xl">{item.tag}</span>
                 <p>{item.name}</p>
               </a>
             ))}
