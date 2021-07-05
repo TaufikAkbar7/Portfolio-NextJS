@@ -6,7 +6,7 @@ import { FaRegFolder } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen mt-14 py-10 flex flex-col justify-center items-center" id="projects">
+    <div className="min-h-screen flex flex-col justify-center items-center" id="projects">
       <Judul text={project.title} marginTop="mt-14" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
       <div className="flex flex-wrap justify-center items-center container mx-auto mt-5">
         {project.projects.map((item, i) => (
