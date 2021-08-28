@@ -1,14 +1,44 @@
 import { project } from "../../content/data";
 import { Judul } from "../atoms";
 import { FaRegFolder } from "react-icons/fa";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 // import Link from "next/link";
 
 const Projects = () => {
+
+  useEffect(() => {
+    
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '.section-project',
+        start: 'center bottom',
+        markers: true,
+        start: 'top 90%',
+        end: 'bottom 60%',
+        toggleActions: 'restart complete reverse reset',
+      }
+    })
+
+    .from('.title', { 
+      y: 300, 
+      opacity: 0, 
+      duration: 1 
+    }, "+=1")
+    .from('.listProject', {
+      x: 1000,
+      opacity: 0, 
+      duration: 1.5
+    })
+  }, [])
+
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center" id="projects">
+    <div className="min-h-screen flex flex-col justify-center items-center overflow-x-hidden section-project" id="projects">
       <Judul text={project.title} marginTop="mt-14" width="w-40" height="h-2" fontSize="text-5xl" fontWeight="font-bold"/>
-      <div className="flex flex-wrap justify-center items-center container mx-auto mt-5">
+      <div className="flex flex-wrap justify-center items-center container mx-auto mt-5 listProject">
         {project.projects.map((item, i) => (
           <div className="mt-5 p-5 sm:w-1/2 lg:w-1/3 md:ml-4 md:mr-4 md:mt-5 sm:mt-5 sm:ml-1 sm:mr-3" key={i}>
           <div className="h-full rounded-lg overflow-hidden bg-gray-700">

@@ -7,7 +7,7 @@ import { BiLinkExternal } from "react-icons/bi";
 
 const hero = {
     title: "Hi. I'm Taufik Akbar",
-    desc: "Student at University Muhammadiyah Prof. Dr. Hamka. I love coding and i aspire to become a Front End Developer"
+    desc: "An undergraduate student majoring in Informatics Engineering at University Muhammadiyah Prof. Dr. Hamka. I interested in Front End Developer.  University Muhammadiyah Prof. Dr. Hamka. I love coding and i aspire to become a Front End Developer"
 }
 
 
