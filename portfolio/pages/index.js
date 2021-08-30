@@ -1,6 +1,7 @@
 import {
   Hero,
   Projects,
+  Footer
 } from "../components";
 import Head from "next/head";
 import React, { Fragment } from "react";
@@ -14,6 +15,7 @@ const Home = () => {
       </Head>
       <Hero />
       <Projects />
+      <Footer />
     </Fragment>
   );
 };
