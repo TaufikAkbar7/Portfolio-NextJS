@@ -1,13 +1,15 @@
-import { useRouter } from 'next/router'
-import { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import { project } from "../../content/data";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import { Nav } from '../../components/atoms';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Link from 'next/link';
+import { Nav } from '../../components/atoms';
 import { Footer } from '../../components';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-const detail = () => {
+
+const Detail = () => {
     const router = useRouter()
     const { id } = router.query
     // const data = [];
@@ -52,7 +54,7 @@ const detail = () => {
                             <Carousel showStatus={false} showThumbs={false} showIndicators={false} autoPlay={true} infiniteLoop={true}>
                                 {data.image.map((img, i) => (
                                     <div key={i}>
-                                        <img className="object-cover" src={img.default.src} width="450" height="250" />
+                                        <Image className="object-cover" src={img.default.src} alt="carousel-img" width="450" height="250" />
                                     </div>
                                 ))}
                             </Carousel>
@@ -88,4 +90,4 @@ const detail = () => {
     )
 }
 
-export default detail;
+export default Detail;
