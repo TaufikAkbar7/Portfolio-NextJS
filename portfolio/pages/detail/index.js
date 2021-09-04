@@ -54,7 +54,7 @@ const Detail = () => {
                             <Carousel showStatus={false} showThumbs={false} showIndicators={false} autoPlay={true} infiniteLoop={true}>
                                 {data.image.map((img, i) => (
                                     <div key={i}>
-                                        <Image className="object-cover" src={img.default.src} alt="carousel-img" width="450" height="250" />
+                                        <Image className="object-cover" src={img.default.src} alt="carousel-img" width="550" height="250" />
                                     </div>
                                 ))}
                             </Carousel>

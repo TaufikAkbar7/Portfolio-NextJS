@@ -48,11 +48,11 @@ const Projects = () => {
               <div className="h-full rounded-lg overflow-hidden bg-gray-700 cursor-pointer">
                 <div className="p-6 flex flex-col items-center">
                   <div className="w-full">
-                    <Image src={item.image[0]} className="object-cover" width={700} height={400} />
+                    <Image src={item.image[0]} className="object-cover" width={850} height={400} />
                   </div>
                   <Judul marginTop="mt-2" text={item.project_name} fontSize="text-xl" fontWeight="font-medium" />
                   <div className="container mx-auto mt-4 relative items-center">
-                    <p className="text-gray-400 text-sm tracking-normal">
+                    <p className="text-white text-sm tracking-normal">
                       {item.project_title}
                     </p>
                   </div>

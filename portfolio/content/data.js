@@ -4,7 +4,6 @@ import { FiInstagram } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
 import { 
-    codingNiceDetail, 
     codingNiceHome,
     shopmerceHome,
     shopmerceImage1,
@@ -32,7 +31,6 @@ const project = {
             features: ["Server-side Rendering", "Image Optimization", "Caraousel", "Responsive Design"],
             image: [
                 codingNiceHome, 
-                codingNiceDetail,
             ],
             stacks: [
                 "Next JS",
