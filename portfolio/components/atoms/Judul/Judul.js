@@ -1,8 +1,6 @@
-const Judul = ({ text, fontSize, fontWeight, marginTop }) => {
+const Judul = ({ text, fontSize, fontWeight, marginTop, color }) => {
   return (
-    <div className={`flex flex-col justify-center items-center title ${marginTop}`}>
-      <h1 className={`${fontSize} ${fontWeight} text-gray-200`}>{text}</h1>
-    </div>
+    <h1 className={`${fontSize} ${fontWeight} ${marginTop} ${color}`}>{text}</h1>
   );
 };
 

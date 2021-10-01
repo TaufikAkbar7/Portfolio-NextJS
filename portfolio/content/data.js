@@ -11,7 +11,8 @@ import {
     shopmerceImage3,
     shopmerceImage4,
     shopmerceImage5,
-    jobApps
+    jobApps,
+    webfood
 } from '../public/assets/index';
 
 const hero = {
@@ -95,7 +96,7 @@ const project = {
         {
             id: 3,
             project_name: "Job Apps",
-            project_title: "Job Apps is first time mobile apps for me",
+            project_title: "Slicing design using React Native",
             project_desc: "In August 2021 I was created a mobile app with name Job Apps. Job Apps is my first project in mobile app. I learn how to slicing design with mobile app using React Native.",
             features: ["Search Job", "Archive Job", "Onboarding Screen"],
             image: [
@@ -117,6 +118,34 @@ const project = {
                 }
             ]
         },
+        {
+            id: 4,
+            project_name: "Webfood App",
+            project_title: "Web for searching recipe food",
+            project_desc: "In November 2020 I was created a website recipe using Spoonacular API",
+            features: ["Search Recipe", "Get Recipe"],
+            image: [
+                webfood
+            ],
+            stacks: [
+                "VueJS",
+                "Vuex",
+                "Vue-Bootstrap",
+                "SCSS"
+            ],
+            links: [
+                {
+                    name: "Live Website",
+                    link: "https://webfood.vercel.app/",
+                    tag: <BiLinkExternal />
+                },
+                {
+                    name: "Source code",
+                    link: "https://github.com/TaufikAkbar7/JobApps",
+                    tag: <FaGithub />
+                }
+            ]
+        }
     ]
 }
 

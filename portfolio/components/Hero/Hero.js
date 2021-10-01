@@ -15,7 +15,10 @@ const Hero = () => {
             {title}
           </h1>
           <h3 className="text-2xl text-gray-300 mt-5 tracking-wide">
-          <Typewriter onInit={type => (
+          <Typewriter options={{
+            delay: 75
+          }} 
+          onInit={type => (
               type
               .typeString(desc)
               .pauseFor(2000)

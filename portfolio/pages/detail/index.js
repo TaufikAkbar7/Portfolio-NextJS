@@ -62,19 +62,19 @@ const Detail = () => {
                         <div className="w-2/3 flex flex-col mt-5 p-5">
                             <div>
                                 <h3 className="text-xl font-bold">Background</h3>
-                                <p>{data.project_desc}</p>
+                                <p className="font-inter">{data.project_desc}</p>
                             </div>
                             <div>
                                 <h3 className="text-xl mt-5 font-bold">Features</h3>
                                 <ul className="list-inside ml-5" style={{ listStyle: 'inherit' }}>
-                                    {data.features.map((fitur, i) => <li key={i}>{fitur}</li>)}
+                                    {data.features.map((fitur, i) => <li className="font-inter" key={i}>{fitur}</li>)}
                                 </ul>
                             </div>
                             <div>
                                 <h3 className="text-xl mt-5 font-bold">Links</h3>
-                                <div className="w-52">
+                                <div className="flex flex-row w-96">
                                     {data.links.map(item => (
-                                        <a className="flex flex-row rounded-md items-center mt-3 py-3 px-2 bg-gray-700 hover:bg-gray-400" href={item.link} key={item.name} target="_blank" rel="noreferrer">
+                                        <a className="flex flex-row ml-5 rounded-md items-center mt-3 py-3 px-2 bg-gray-700 hover:bg-gray-400" href={item.link} key={item.name} target="_blank" rel="noreferrer">
                                             <span className="text-2xl">{item.tag}</span>
                                             <p className="ml-3">{item.name}</p>
                                         </a>

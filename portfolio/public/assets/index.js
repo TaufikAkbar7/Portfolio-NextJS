@@ -6,6 +6,7 @@ const shopmerceImage3 = require('./shopmerce/2021-08-30_09-50_1.png');
 const shopmerceImage4 = require('./shopmerce/2021-08-30_09-49.png');
 const shopmerceImage5 = require('./shopmerce/2021-08-30_09-52_1.png');
 const jobApps = require('./jobapps/jobapps.png');
+const webfood = require('./webfood/2021-10-01_22-02.png');
 
 export { 
     codingNiceHome,
@@ -15,5 +16,6 @@ export {
     shopmerceImage3,
     shopmerceImage4,
     shopmerceImage5,
-    jobApps 
+    jobApps,
+    webfood 
 };
