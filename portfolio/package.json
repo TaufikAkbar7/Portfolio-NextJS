@@ -16,8 +16,7 @@
     "react-icons": "^4.2.0",
     "react-loader-spinner": "^4.0.0",
     "react-responsive-carousel": "^3.2.21",
-    "react-scroll": "^1.8.2",
-    "typewriter-effect": "^2.18.0"
+    "react-scroll": "^1.8.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

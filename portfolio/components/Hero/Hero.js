@@ -1,7 +1,6 @@
 import { hero, contact } from "../../content/data";
 import { Link as ScrollLink } from "react-scroll";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   const { socials } = contact;
@@ -11,22 +10,11 @@ const Hero = () => {
     <div className="min-h-screen flex flex-col justify-center items-center" id="hero">
       <div className="container mx-auto font-sans flex flex-col justify-center items-center p-5">
         <div className="w-8/12 flex flex-col justify-center items-center">
-          <h1 className="text-6xl font-bold text-gray-200 p-1">
+          <h1 className="text-6xl font-bold text-gray-200 p-1 text-center">
             {title}
           </h1>
-          <h3 className="text-2xl text-gray-300 mt-5 tracking-wide">
-          <Typewriter options={{
-            delay: 75
-          }} 
-          onInit={type => (
-              type
-              .typeString(desc)
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString(desc)
-              .deleteAll()
-              .start()
-            )}/>
+          <h3 className="text-2xl text-center text-gray-300 mt-5 tracking-wide">
+          {desc}
           </h3>
           <div className="flex flex-wrap justify-center items-center mt-5">
             {socials.map(item => (

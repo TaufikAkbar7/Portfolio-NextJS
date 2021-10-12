@@ -72,9 +72,9 @@ const Detail = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl mt-5 font-bold">Links</h3>
-                                <div className="flex flex-row w-96">
+                                <div className="flex flex-wrap">
                                     {data.links.map(item => (
-                                        <a className="flex flex-row ml-5 rounded-md items-center mt-3 py-3 px-2 bg-gray-700 hover:bg-gray-400" href={item.link} key={item.name} target="_blank" rel="noreferrer">
+                                        <a className="flex flex-row ml-2 rounded-md items-center mt-3 py-3 px-2 bg-gray-700 hover:bg-gray-400" href={item.link} key={item.name} target="_blank" rel="noreferrer">
                                             <span className="text-2xl">{item.tag}</span>
                                             <p className="ml-3">{item.name}</p>
                                         </a>
