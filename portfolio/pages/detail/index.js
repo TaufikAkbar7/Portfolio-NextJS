@@ -12,7 +12,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 const Detail = () => {
     const router = useRouter()
     const { id } = router.query
-    // const data = [];
     const [data, setData] = useState([]);
 
     useEffect(() => {

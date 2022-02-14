@@ -1,8 +1,4 @@
-import {
-  Hero,
-  Projects,
-  Footer
-} from "../components";
+import { Hero, Projects, Footer } from "../components";
 import Head from "next/head";
 import React, { Fragment } from "react";
 
@@ -13,8 +9,10 @@ const Home = () => {
         <title>Taufik Akbar</title>
         <meta name="description" content="Portfolio website using Next JS" />
       </Head>
-      <Hero />
-      <Projects />
+      <main className="px-28">
+        <Hero />
+        <Projects />
+      </main>
       <Footer />
     </Fragment>
   );
