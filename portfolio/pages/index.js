@@ -9,7 +9,7 @@ const Home = () => {
         <title>Taufik Akbar</title>
         <meta name="description" content="Portfolio website using Next JS" />
       </Head>
-      <main className="px-28">
+      <main className="xs:px-10 md:px-28">
         <Hero />
         <Projects />
       </main>
