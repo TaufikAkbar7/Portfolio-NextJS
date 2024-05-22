@@ -23,6 +23,13 @@ const Hero = () => {
           <h3 className="xs:text-base lg:text-xl w-3/4 text-gray-300 mt-5 tracking-wide leading-relaxed">
             {desc}
           </h3>
+          <a
+            href="mailto:akbar.taufik062@gmail.com"
+            rel="noreferrer"
+            className="inline-block mt-10 py-3 px-8 border font-semibold text-lg rounded-lg border-primaryColor hover:bg-primaryColor"
+          >
+            Get In Touch
+          </a>
         </div>
         <div className="flex w-72 flex-row justify-center items-center mt-5">
           {socials.map((item) => (
