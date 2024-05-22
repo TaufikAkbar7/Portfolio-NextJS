@@ -15,11 +15,11 @@ const Projects = () => {
               <FaRegFolderOpen className="w-8 h-8 text-primaryColor" />
               <div className="flex items-center gap-x-3">
                 {item.linkWebsite && (
-                  <a href={item.linkWebsite} target="_blank">
+                  <a href={item.linkWebsite} target="_blank" rel="noreferrer">
                     <FaExternalLinkAlt className="w-5 h-5 text-primaryColor" />
                   </a>
                 )}
-                <a href={item.linkGithub} target="_blank">
+                <a href={item.linkGithub} target="_blank" rel="noreferrer">
                   <FaGithub className="w-5 h-5 text-primaryColor" />
                 </a>
               </div>
