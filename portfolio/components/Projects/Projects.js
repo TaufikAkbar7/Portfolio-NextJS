@@ -10,7 +10,7 @@ const Projects = () => {
       <p className="sm:text-lg mt-2 text-white">{project.subtitle}</p>
       <div className="grid grid-cols-1 mt-8 gap-5 lg:grid-cols-2 xl:grid-cols-3">
         {project.projects.map((item, i) => (
-          <div className="flex flex-col justify-between w-80 h-72 p-6 rounded-lg overflow-hidden bg-gray-700" key={i}>
+          <div className="flex flex-col justify-between w-full h-72 p-6 rounded-lg overflow-hidden bg-gray-700 sm:w-80" key={i}>
             <div className="flex justify-between items-center w-full">
               <FaRegFolderOpen className="w-8 h-8 text-primaryColor" />
               <div className="flex items-center gap-x-3">

@@ -20,9 +20,10 @@ const Hero = () => {
             You can call me
             <span className="text-primaryColor pl-2">Taufik</span>
           </h2>
-          <h3 className="xs:text-base lg:text-xl w-3/4 text-gray-300 mt-5 tracking-wide leading-relaxed">
+          <h3 className="w-full text-gray-300 mt-5 tracking-wide leading-relaxed xs:text-base sm:w-3/4 lg:text-xl">
             {desc}
           </h3>
+          <div className="flex justify-center lg:block">
           <a
             href="mailto:akbar.taufik062@gmail.com"
             rel="noreferrer"
@@ -30,8 +31,9 @@ const Hero = () => {
           >
             Get In Touch
           </a>
+          </div>
         </div>
-        <div className="flex w-72 flex-row justify-center items-center mt-5">
+        <div className="w-72 justify-center items-center mt-5 hidden lg:flex flex-row">
           {socials.map((item) => (
             <a
               key={item.name}
