@@ -1,4 +1,4 @@
-import Judul from "./Judul/Judul"
-import Nav from "./Nav/Nav"
+import Judul from "./Judul"
+import Nav from "./Nav"
 
 export { Judul, Nav }

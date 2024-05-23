@@ -6,7 +6,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-start items-center overflow-x-hidden section-project mb-10 projects">
-      <Judul color="text-white" text={project.title} marginTop="mt-14" width="w-40" height="h-2" fontSize="text-4xl" fontWeight="font-bold" />
+      <Judul className="text-white text-2xl font-bold md:text-4xl" text={project.title} />
       <p className="sm:text-lg mt-2 text-white">{project.subtitle}</p>
       <div className="grid grid-cols-1 mt-8 gap-5 lg:grid-cols-2 xl:grid-cols-3">
         {project.projects.map((item, i) => (
@@ -25,7 +25,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center">
-              <Judul color="text-white" marginTop="mt-2" text={item.project_name} fontSize="text-2xl" fontWeight="font-medium" />
+              <Judul className="text-white mt-2 text-xl font-medium md:text-2xl" text={item.project_name} />
               <div className="mt-4 relative items-center">
                 <p className="text-white text-sm tracking-normal font-inter">
                   {item.project_title}
